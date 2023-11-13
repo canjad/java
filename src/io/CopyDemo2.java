@@ -16,9 +16,12 @@ public class CopyDemo2 {
         int len;//用来记录本次读取的字节数量
         long strart=System.currentTimeMillis();
         while((len= fis.read(data)) !=-1){
-            fos.write(len);
+            fos.write(data);
 
         }
+
+        fis.close();
+        fos.close();
     }
 
 
