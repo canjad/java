@@ -13,6 +13,7 @@ public class FOSDemo {
         //可以直接写出一组字节数据
         fos.write(13);
         fos.write("ABCDE".getBytes());
+        //getBytes() 将字符串转换为字节数组
         fos.write("hello world\r\n~~~".getBytes(),2,5);
         //关闭文件流
         fos.close();
