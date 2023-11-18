@@ -4,10 +4,14 @@ import java.io.Serializable;
 import java.util.Arrays;
 
 public class Person implements Serializable {
+    //固定person类的 uid的值
+    static final long serialVersionUID = 42L;
     private  String name;
     private  int age;
     private String gender;
-    private String[] otherinfo;
+    private transient String[] otherinfo; //当进行对象序列化的时候，该属性的值将会被忽略
+
+    private  String salary;
     //生成构造方法 get,set, toString
     public Person(String name, int age, String gender, String[] otherinfo) {
         this.name = name;

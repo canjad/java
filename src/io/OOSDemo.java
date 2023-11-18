@@ -12,6 +12,7 @@ public class OOSDemo {
         int age =18;
         String gender="男";
         String[] otherinfo={"是一个活波可爱的人"};
+
         Person p = new Person(name, age, gender, otherinfo);
         System.out.println(p);
         //将对象p写入到person.txt中
